@@ -21,8 +21,8 @@ return new class extends Migration
             $table->time('orario_di_arrivo');
             $table->date('data_di_partenza');
             $table->unsignedTinyInteger('numero_carrozze')->nullable();
-            $table->boolean('in_orario')->nullable();
-            $table->boolean('cancellato')->nullable();
+            $table->string('in_orario', 2);
+            $table->string('cancellato', 2);
          });
     }
 
