@@ -22,9 +22,9 @@ class TrainTableSeeder extends Seeder
             $newTrain->orario_di_partenza = $faker->time();
             $newTrain->orario_di_arrivo = $faker->time();
             $newTrain->data_di_partenza = $faker->dateTimeBetween('now', '+10 days');
-            $newTrain->data_di_arrivo = $faker->dateTimeBetween('+10 days', '+11 days');
+            $newTrain->data_di_arrivo = $faker->dateTimeBetween('data_di_partenza', '+11 days');
             $newTrain->numero_carrozze = $faker->numberBetween(1, 10);
-            $newTrain->in_orario = $faker->randomElement([false, true]);
+            $newTrain->in_orario = $faker->cancellato ? false : $faker->randomElement([false, true]);
             $newTrain->cancellato = $faker->randomElement([false, true]);
 
 

@@ -41,6 +41,9 @@
                         <p class="card-text">Partenza: {{ $train->orario_di_arrivo }}</p>
                         <p class="card-text">Arrivo: {{ $train->orario_di_partenza }}</p>
                         <p class="card-text">Carrozze: {{ $train->numero_carrozze }}</p>
+                        @if($train->cancellato && $train->in_orario)
+                            <p class="card-text text-danger">Cancellato</p>
+                        @endif
                     </div>
                 </div>
             </div>
