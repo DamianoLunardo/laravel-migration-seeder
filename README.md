@@ -12,3 +12,6 @@ Ogni treno dovrà avere:
 È probabile che siano necessarie altre colonne per far funzionare la tabella nel modo corretto ;) ...
   - Inserite inizialmente alcuni dati tramite PhpMyAdmin. (al max una decina di righe)
   - Create Model relativo ed un Controller per mostrare nella home page tutti i treni che sono in partenza dalla data odierna.
+
+## Giorno 2
+- Aggiungiamo un seeder per la classe Train usando FakerPHP.

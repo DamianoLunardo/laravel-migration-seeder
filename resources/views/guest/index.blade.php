@@ -14,7 +14,8 @@
                         <h5 class="card-title">{{ $train->azienda }}</h5>
                         <p class="card-text">Parte da: {{ $train->stazione_di_partenza }}</p>
                         <p class="card-text">Arriva a: {{ $train->stazione_di_arrivo }}</p>
-                        <p class="card-text">Data: {{ $train->data_di_partenza }}</p>
+                        <p class="card-text">Data di partenza: {{ $train->data_di_partenza }}</p>
+                        <p class="card-text">Data di arrivo: {{ $train->data_di_arrivo }}</p>
                         <p class="card-text">Partenza: {{ $train->orario_di_arrivo }}</p>
                         <p class="card-text">Arrivo: {{ $train->orario_di_partenza }}</p>
                         <p class="card-text">Carrozze: {{ $train->numero_carrozze }}</p>
